@@ -6,11 +6,22 @@ body {
     border: 6px solid black;
     display: inline-flex;
     /* 
-     * display flex makes it so, that the flex-items are from left to right
+     * display: flex makes it so, that the flex-items are from left to right
      * instead of the traditional divs that goes from top to bottom.
-     * it also behaves like a block element, it uses the 100% width.
+     * display: flex also behaves like a block element, it uses the 100% width.
+     * while display: inline-flex does not behave like a block element, but an inline element.
      * 
-     * to change the 100% width and just to wrap the items around just use inline-flex, instead of flex.
+     * Note: The difference between display: flex and display: inline-flex is just like
+     *       the difference between display: block and display: inline, but with flex.
+     * 
+     * Here is my attempt to explain what the differences are:
+     *      that when using display: inline-flex, the border **only** wraps around the items.
+     *     while when using display: flex,        the border wraps around the items and
+     *     **possibly some excess whitespace** if the browser width is bigger than the containers width.
+     * With browser width, I mean like firefox/google/Brave/etc. instance/window width.
+     * 
+     * Some basics about block and inline element properties, see this link ↙️
+     * Read or apply it carefully: https://www.w3schools.com/html/html_blocks.asp
      * */
 }
 
